@@ -2,15 +2,17 @@ module github.com/negz/function-starlark
 
 go 1.20
 
-replace go.starlark.net => ../../google/starlark-go
+replace go.starlark.net => github.com/negz/starlark-go v0.0.0-20231002010023-eb7d2e484c65
 
 require (
 	github.com/alecthomas/kong v0.8.0
 	github.com/crossplane/crossplane-runtime v1.13.0
 	github.com/crossplane/function-sdk-go v0.0.0-20230930011419-ec31b88ab696
 	github.com/google/go-cmp v0.5.9
+	go.starlark.net v0.0.0-20230925163745-10651d5192ab
 	google.golang.org/protobuf v1.31.0
 	k8s.io/apimachinery v0.28.2
+	k8s.io/utils v0.0.0-20230505201702-9f6742963106
 	sigs.k8s.io/controller-tools v0.13.0
 )
 
@@ -46,7 +48,6 @@ require (
 	github.com/spf13/cobra v1.7.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
-	go.starlark.net v0.0.0-20230925163745-10651d5192ab // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.26.0 // indirect
 	golang.org/x/mod v0.12.0 // indirect
@@ -68,7 +69,6 @@ require (
 	k8s.io/client-go v0.28.2 // indirect
 	k8s.io/klog/v2 v2.100.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20230717233707-2695361300d9 // indirect
-	k8s.io/utils v0.0.0-20230505201702-9f6742963106 // indirect
 	sigs.k8s.io/controller-runtime v0.15.0 // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect

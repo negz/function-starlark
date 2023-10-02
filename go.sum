@@ -59,8 +59,6 @@ github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46t
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
 github.com/crossplane/crossplane-runtime v1.13.0 h1:EumInUbS8mXV7otwoI3xa0rPczexJOky4XLVlHxxjO0=
 github.com/crossplane/crossplane-runtime v1.13.0/go.mod h1:FuKIC8Mg8hE2gIAMyf2wCPkxkFPz+VnMQiYWBq1/p5A=
-github.com/crossplane/function-sdk-go v0.0.0-20230929052952-230c7dfcb3b0 h1:CFI/N+D0Mv1q7twYdUEwPc5+wnTHnJjdBVkU+mQgJ8E=
-github.com/crossplane/function-sdk-go v0.0.0-20230929052952-230c7dfcb3b0/go.mod h1:KzsTYRhUS+HGzGASlJMxnURTZ1tCnOihjfKSBM3AfKo=
 github.com/crossplane/function-sdk-go v0.0.0-20230930011419-ec31b88ab696 h1:WwmZdPz2m+z9TxOZKxEamF84bSaAakEAsIHwd+iOtxI=
 github.com/crossplane/function-sdk-go v0.0.0-20230930011419-ec31b88ab696/go.mod h1:KzsTYRhUS+HGzGASlJMxnURTZ1tCnOihjfKSBM3AfKo=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -207,6 +205,8 @@ github.com/modern-go/reflect2 v1.0.2 h1:xBagoLtFs94CBntxluKeaWgTMpvLxC4ur3nMaC9G
 github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjYzDa0/r8luk=
 github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 h1:C3w9PqII01/Oq1c1nUAm88MOHcQC9l5mIlSMApZMrHA=
 github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822/go.mod h1:+n7T8mK8HuQTcFwEeznm/DIxMOiR9yIdICNftLE1DvQ=
+github.com/negz/starlark-go v0.0.0-20231002010023-eb7d2e484c65 h1:iWE2Ot3OJXqJCvISEw3TXOumQvDqMILE+7z0ZPWnCDI=
+github.com/negz/starlark-go v0.0.0-20231002010023-eb7d2e484c65/go.mod h1:LcLNIzVOMp4oV+uusnpk+VU+SzXaJakUuBjoCSWH5dM=
 github.com/nxadm/tail v1.4.8 h1:nPr65rt6Y5JFSKQO7qToXr7pePgD6Gwiw05lkbyAQTE=
 github.com/onsi/ginkgo v1.16.5 h1:8xi0RTUf59SOSfEtZMvwTvXYMzG4gV23XVHOZiXNtnE=
 github.com/onsi/ginkgo/v2 v2.11.0 h1:WgqUCUt/lT6yXoQ8Wef0fsNn5cAuMK7+KT9UFRz2tcU=
@@ -255,8 +255,6 @@ go.opencensus.io v0.22.2/go.mod h1:yxeiOL68Rb0Xd1ddK5vPZ/oVn4vY4Ynel7k9FzqtOIw=
 go.opencensus.io v0.22.3/go.mod h1:yxeiOL68Rb0Xd1ddK5vPZ/oVn4vY4Ynel7k9FzqtOIw=
 go.opencensus.io v0.22.4/go.mod h1:yxeiOL68Rb0Xd1ddK5vPZ/oVn4vY4Ynel7k9FzqtOIw=
 go.opencensus.io v0.22.5/go.mod h1:5pWMHQbX5EPX2/62yrJeAkowc+lfs/XD7Uxpq3pI6kk=
-go.starlark.net v0.0.0-20230925163745-10651d5192ab h1:7QkXlIVjYdSsKKSGnM0jQdw/2w9W5qcFDGTc00zKqgI=
-go.starlark.net v0.0.0-20230925163745-10651d5192ab/go.mod h1:LcLNIzVOMp4oV+uusnpk+VU+SzXaJakUuBjoCSWH5dM=
 go.uber.org/atomic v1.7.0/go.mod h1:fEN4uk6kAWBTFdckzkM89CLk9XfWZrxpCo0nPH17wJc=
 go.uber.org/goleak v1.1.11/go.mod h1:cwTWslyiVhfpKIDGSZEM2HlOvcqm+tG4zioyIeLoqMQ=
 go.uber.org/goleak v1.2.1 h1:NBol2c7O1ZokfZ0LEU9K6Whx/KnwvepVetCUhtKja4A=
