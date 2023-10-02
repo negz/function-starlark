@@ -1,6 +1,6 @@
 // Package v1beta1 contains the input type for this Function
 // +kubebuilder:object:generate=true
-// +groupName=template.fn.crossplane.io
+// +groupName=starlark.fn.crossplane.io
 // +versionName=v1beta1
 package v1beta1
 
@@ -11,17 +11,29 @@ import (
 // This isn't a custom resource, in the sense that we never install its CRD.
 // It is a KRM-like object, so we generate a CRD to describe its schema.
 
-// TODO: Add your input type here! It doesn't need to be called 'Input', you can
-// rename it to anything you like.
+// A ScriptSource is a source from which a script can be loaded.
+type ScriptSource string
 
-// Input can be used to provide input to this Function.
+// Supported script sources.
+const (
+	// ScriptSourceInline specifies a script inline.
+	ScriptSourceInline ScriptSource = "Inline"
+)
+
+// Script can be used to provide input to this Function.
 // +kubebuilder:object:root=true
 // +kubebuilder:storageversion
 // +kubebuilder:resource:categories=crossplane
-type Input struct {
+type Script struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	// Example is an example field. Replace it with whatever input you need. :)
-	Example string `json:"example"`
+	// Source of this script. Currently only Inline is supported.
+	// +kubebuilder:validation:Enum=Inline
+	// +kubebuilder:default=Inline
+	Source ScriptSource `json:"source"`
+
+	// Inline specifies a script inline
+	// +optional
+	Inline *string `json:"inline,omitempty"`
 }

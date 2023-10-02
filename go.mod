@@ -1,6 +1,8 @@
-module github.com/crossplane/function-template-go
+module github.com/negz/function-starlark
 
 go 1.20
+
+replace go.starlark.net => ../../google/starlark-go
 
 require (
 	github.com/alecthomas/kong v0.8.0
@@ -44,6 +46,7 @@ require (
 	github.com/spf13/cobra v1.7.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
+	go.starlark.net v0.0.0-20230925163745-10651d5192ab // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.26.0 // indirect
 	golang.org/x/mod v0.12.0 // indirect

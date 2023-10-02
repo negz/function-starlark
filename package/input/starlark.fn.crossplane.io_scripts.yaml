@@ -3,32 +3,31 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.12.1
-  name: inputs.template.fn.crossplane.io
+    controller-gen.kubebuilder.io/version: v0.13.0
+  name: scripts.starlark.fn.crossplane.io
 spec:
-  group: template.fn.crossplane.io
+  group: starlark.fn.crossplane.io
   names:
     categories:
     - crossplane
-    kind: Input
-    listKind: InputList
-    plural: inputs
-    singular: input
+    kind: Script
+    listKind: ScriptList
+    plural: scripts
+    singular: script
   scope: Namespaced
   versions:
   - name: v1beta1
     schema:
       openAPIV3Schema:
-        description: Input can be used to provide input to this Function.
+        description: Script can be used to provide input to this Function.
         properties:
           apiVersion:
             description: 'APIVersion defines the versioned schema of this representation
               of an object. Servers should convert recognized schemas to the latest
               internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
             type: string
-          example:
-            description: Example is an example field. Replace it with whatever input
-              you need. :)
+          inline:
+            description: Inline specifies a script inline
             type: string
           kind:
             description: 'Kind is a string value representing the REST resource this
@@ -37,8 +36,14 @@ spec:
             type: string
           metadata:
             type: object
+          source:
+            default: Inline
+            description: Source of this script. Currently only Inline is supported.
+            enum:
+            - Inline
+            type: string
         required:
-        - example
+        - source
         type: object
     served: true
     storage: true
